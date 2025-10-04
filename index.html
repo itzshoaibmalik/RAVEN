@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAVEN | Curated Lifestyle Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="shell header__inner">
+        <a class="brand" href="#top">RAVEN</a>
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#lookbook">Lookbook</a></li>
+            <li><a href="#stories">Stories</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn--ghost header__cta" href="#cta">Join Circle</a>
+          <button class="btn-icon" aria-label="Search" data-search-trigger>
+            <span class="icon">⌕</span>
+          </button>
+          <button class="btn-icon" aria-label="Account">
+            <span class="icon">👤</span>
+          </button>
+          <button class="btn-icon" aria-label="Shopping cart" data-cart>
+            <span class="icon">🛒</span>
+            <span class="badge" data-cart-count hidden>0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--shop" aria-labelledby="hero-title">
+        <div class="shell hero__content">
+          <div class="hero__text">
+            <p class="eyebrow">Autumn / Winter 2025</p>
+            <h1 id="hero-title">Ritual essentials for life in motion.</h1>
+            <p>
+              Discover limited-edition apparel, objects, and fragrances designed for modern living.
+              Sustainably sourced. Crafted to elevate every day.
+            </p>
+            <div class="hero__actions">
+              <a href="#featured" class="btn btn--primary">Shop new arrivals</a>
+              <a href="#collections" class="btn btn--ghost">Browse collections</a>
+            </div>
+            <div class="hero__stat">
+              <span>97%</span>
+              <p>of RAVEN members elevate their daily rituals within the first month.</p>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Lifestyle hero" />
+            <div class="hero__badge">
+              <span>Members first</span>
+              <p>Reserve early access to drops and receive carbon-neutral shipping.</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__decor" aria-hidden="true">
+          <span class="hero__orb hero__orb--one"></span>
+          <span class="hero__orb hero__orb--two"></span>
+          <span class="hero__orb hero__orb--three"></span>
+        </div>
+      </section>
+
+      <section class="highlights" aria-label="Key shopping perks">
+        <div class="shell highlights__grid">
+          <article>
+            <h3>Carbon Neutral</h3>
+            <p>Offset logistics with green partners in 32 countries.</p>
+          </article>
+          <article>
+            <h3>45-Day Trial</h3>
+            <p>Experience the products at home with free exchanges.</p>
+          </article>
+          <article>
+            <h3>Certified Makers</h3>
+            <p>Collaborations with independent artisans worldwide.</p>
+          </article>
+          <article>
+            <h3>4.8★ Rated</h3>
+            <p>Trusted by over 180k design-forward customers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="collections" class="collections" aria-labelledby="collections-title">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow">Collections</p>
+            <h2 id="collections-title">Curated drops for every moment.</h2>
+          </div>
+          <div class="collections__grid">
+            <article class="collection-card">
+              <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=80" alt="Home ritual collection" />
+              <div>
+                <h3>Home Rituals</h3>
+                <p>Incense, ceramics, and textiles crafted for mindful spaces.</p>
+                <a href="#featured" class="link-arrow">Shop collection</a>
+              </div>
+            </article>
+            <article class="collection-card">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Apparel collection" />
+              <div>
+                <h3>Apparel Lab</h3>
+                <p>Modular outerwear engineered for movement and warmth.</p>
+                <a href="#featured" class="link-arrow">Shop collection</a>
+              </div>
+            </article>
+            <article class="collection-card">
+              <img src="https://images.unsplash.com/photo-1516826431069-9ffb05f86b64?auto=format&fit=crop&w=900&q=80" alt="Fragrance collection" />
+              <div>
+                <h3>Fragrance Archive</h3>
+                <p>Small-batch scents inspired by natural wilderness trails.</p>
+                <a href="#featured" class="link-arrow">Shop collection</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured" class="featured" aria-labelledby="featured-title">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow">New arrivals</p>
+            <h2 id="featured-title">Featured pieces</h2>
+            <p>Slow-made goods engineered with recycled fibers, botanical scents, and tactile finishes.</p>
+          </div>
+          <div class="shop-controls">
+            <div class="filters" role="group" aria-label="Product filters" data-filter-group>
+              <button class="filter-chip" type="button" data-filter="all" aria-pressed="true"><span>All</span></button>
+              <button class="filter-chip" type="button" data-filter="apparel" aria-pressed="false"><span>Apparel</span></button>
+              <button class="filter-chip" type="button" data-filter="home" aria-pressed="false"><span>Home</span></button>
+              <button class="filter-chip" type="button" data-filter="fragrance" aria-pressed="false"><span>Fragrance</span></button>
+              <button class="filter-chip" type="button" data-filter="wellness" aria-pressed="false"><span>Wellness</span></button>
+              <button class="filter-chip" type="button" data-filter="gifting" aria-pressed="false"><span>Gifting</span></button>
+            </div>
+            <label class="sort-select">
+              Sort by
+              <select data-sort>
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Top rated</option>
+                <option value="newest">Newest</option>
+              </select>
+            </label>
+          </div>
+          <div class="product-grid" data-products></div>
+          <div class="empty-state" data-empty hidden>
+            <h3>No products found</h3>
+            <p>Try adjusting your filters or explore a different collection.</p>
+            <button class="btn btn--ghost" type="button" data-clear-filters>Reset filters</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="lookbook" class="lookbook" aria-labelledby="lookbook-title">
+        <div class="shell lookbook__inner">
+          <div class="lookbook__text">
+            <p class="eyebrow">Lookbook</p>
+            <h2 id="lookbook-title">Seasonal narratives captured in Kyoto.</h2>
+            <p>
+              Follow our creative team through ancient streets, contemporary ryokans, and forest shrines as they
+              translate the new collection into motion.
+            </p>
+            <a href="#stories" class="btn btn--ghost">View journal</a>
+          </div>
+          <div class="lookbook__gallery">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=80" alt="Lookbook shot one" />
+            <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=700&q=80" alt="Lookbook shot two" />
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=700&q=80" alt="Lookbook shot three" />
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee__inner" role="presentation">
+          <span>Apparel</span>
+          <span>Objects</span>
+          <span>Fragrance</span>
+          <span>Wellness</span>
+          <span>Home</span>
+          <span>Gifting</span>
+        </div>
+      </section>
+
+      <section id="stories" class="stories" aria-labelledby="stories-title">
+        <div class="shell">
+          <div class="section-head">
+            <p class="eyebrow">Journal</p>
+          <h2 id="stories-title">Stories from the atelier</h2>
+          </div>
+          <div class="stories__grid">
+            <article>
+              <span class="tag">Behind the Design</span>
+              <h3>Tracing the botanicals in our signature scent.</h3>
+              <p>Meet the growers and perfumers transforming wild herbs into balanced accords.</p>
+              <a href="#" class="link-arrow">Read story</a>
+            </article>
+            <article>
+              <span class="tag">Care Guide</span>
+              <h3>How to layer technical textiles all season.</h3>
+              <p>Step-by-step styling and maintenance tips for evolving climates.</p>
+              <a href="#" class="link-arrow">Read story</a>
+            </article>
+            <article>
+              <span class="tag">Community</span>
+              <h3>Artist residency spotlight: Atelier Kuma.</h3>
+              <p>Explore our collaboration with Kyoto-based ceramicist Akiko Chiba.</p>
+              <a href="#" class="link-arrow">Read story</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial" aria-labelledby="testimonial-title">
+        <div class="shell testimonial__content">
+          <p class="eyebrow">Loved by customers</p>
+          <h2 id="testimonial-title">What our community says</h2>
+          <div class="testimonial__slider" data-slider>
+            <article class="testimonial__slide is-active">
+              <blockquote>
+                “The attention to detail is unparalleled. RAVEN’s incense set transformed my morning routine.”
+              </blockquote>
+              <p class="testimonial__meta">Aiko Sato — Tokyo</p>
+            </article>
+            <article class="testimonial__slide">
+              <blockquote>
+                “Their modular coats carried me from mountain hikes to evening dinners. Durable and elegant.”
+              </blockquote>
+              <p class="testimonial__meta">Jonah McKay — Vancouver</p>
+            </article>
+            <article class="testimonial__slide">
+              <blockquote>
+                “Every drop feels intentional. RAVEN made gifting a meaningful ritual for our family.”
+              </blockquote>
+              <p class="testimonial__meta">Mila Hernandez — Madrid</p>
+            </article>
+            <div class="testimonial__controls">
+              <button class="btn-icon" data-prev aria-label="Previous testimonial">&#8592;</button>
+              <button class="btn-icon" data-next aria-label="Next testimonial">&#8594;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="shell cta__container">
+          <div>
+          <p class="eyebrow">Member program</p>
+          <h2 id="cta-title">Join RAVEN Circle for early access drops.</h2>
+            <p>
+              Unlock private pre-orders, styling sessions, and limited-run collaborations. Cancel anytime.
+            </p>
+          </div>
+          <form class="cta__form">
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@domain.com" required />
+            </label>
+            <label>
+              Interests
+              <select name="interests">
+                <option>Apparel</option>
+                <option>Home & Objects</option>
+                <option>Fragrance</option>
+                <option>Wellness</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn--primary">Become a member</button>
+            <p class="cta__note">You can unsubscribe in a single click.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer__top">
+        <div>
+          <a class="brand" href="#top">RAVEN</a>
+          <p>Contours, textures, and fragrances crafted to elevate daily rituals.</p>
+        </div>
+        <div class="footer__links">
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#collections">Collections</a></li>
+              <li><a href="#featured">New arrivals</a></li>
+              <li><a href="#stories">Stories</a></li>
+              <li><a href="#lookbook">Lookbook</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">Shipping & returns</a></li>
+              <li><a href="#">Gift services</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="mailto:hello@raven.store">hello@raven.store</a></li>
+              <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.pinterest.com" target="_blank" rel="noreferrer">Pinterest</a></li>
+              <li><a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="shell footer__bottom">
+        <p>&copy; <span id="year"></span> RAVEN. Crafted responsibly.</p>
+        <a href="#top" class="link-arrow">Back to top</a>
+      </div>
+    </footer>
+
+    <div class="overlay" data-overlay></div>
+
+    <aside class="cart-drawer" data-cart-drawer aria-hidden="true">
+      <div class="cart-header">
+        <h3>Shopping cart</h3>
+        <button class="btn-icon" type="button" aria-label="Close cart" data-close-cart>
+          <span class="icon">✕</span>
+        </button>
+      </div>
+      <div class="cart-body">
+        <div class="cart-empty" data-cart-empty>
+          <p>Your cart is currently empty.</p>
+          <button class="btn btn--ghost" type="button" data-cart-continue>Continue browsing</button>
+        </div>
+        <div class="cart-items" data-cart-items></div>
+      </div>
+      <div class="cart-footer" data-cart-footer hidden>
+        <div class="cart-summary">
+          <div class="line">
+            <span>Subtotal</span>
+            <span data-cart-subtotal>$0</span>
+          </div>
+          <div class="line">
+            <span>Shipping</span>
+            <span data-cart-shipping>—</span>
+          </div>
+          <div class="line cart-total">
+            <span>Total</span>
+            <span data-cart-total>$0</span>
+          </div>
+        </div>
+        <p class="cart-note" data-cart-note>Complimentary shipping on orders above $150.</p>
+        <button class="btn btn--primary" type="button" data-checkout>Checkout</button>
+      </div>
+    </aside>
+
+    <section class="search-panel" data-search-panel aria-hidden="true">
+      <div class="search-panel__inner">
+        <div class="search-header">
+          <h3>Search products</h3>
+          <button class="btn-icon" type="button" aria-label="Close search" data-close-search>
+            <span class="icon">✕</span>
+          </button>
+        </div>
+        <form class="search-form" role="search">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search by product, material, or category"
+            data-search-input
+            autocomplete="off"
+          />
+        </form>
+        <p class="search-hint">Type at least two characters to explore matching products.</p>
+        <p class="search-empty" data-search-empty hidden>No products found. Try a different keyword.</p>
+        <ul class="search-results" data-search-results></ul>
+        <div class="search-trending" data-search-trending>
+          <p class="search-subheading">Popular right now</p>
+          <div class="search-tags">
+            <button type="button" class="filter-chip" data-search-chip="incense">Hinoki incense</button>
+            <button type="button" class="filter-chip" data-search-chip="parka">Trail parka</button>
+            <button type="button" class="filter-chip" data-search-chip="ceramic">Ceramic set</button>
+            <button type="button" class="filter-chip" data-search-chip="blanket">Knit blanket</button>
+            <button type="button" class="filter-chip" data-search-chip="fragrance">Fragrance</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

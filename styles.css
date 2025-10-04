@@ -1,3 +1,29 @@
+.announcement {
+  border-bottom: 1px solid rgba(127, 90, 240, 0.2);
+  background: linear-gradient(120deg, rgba(127, 90, 240, 0.32), rgba(12, 13, 20, 0.15));
+  color: var(--text-primary);
+}
+
+.announcement__inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  padding: 0.65rem 0;
+}
+
+.announcement__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(12, 13, 20, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 :root {
   --bg: #060608;
   --bg-soft: #101019;
@@ -98,7 +124,7 @@ button {
 }
 
 .btn--primary:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: 0 32px 55px -30px rgba(127, 90, 240, 0.8);
 }
 
@@ -108,7 +134,8 @@ button {
 }
 
 .btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
 }
 
 .btn::after {
@@ -393,6 +420,58 @@ button {
   mix-blend-mode: screen;
 }
 
+.press {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+  background: rgba(12, 13, 20, 0.4);
+}
+
+.press__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.press__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.press__logos {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(120px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.press__logo {
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(247, 248, 255, 0.72);
+  position: relative;
+  padding: 0.5rem 0.8rem;
+}
+
+.press__logo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.press__logo:hover::after {
+  opacity: 1;
+}
+
 .hero__orb--one {
   top: -60px;
   right: 12%;
@@ -604,7 +683,7 @@ button {
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-12px);
   border-color: var(--accent-strong);
   box-shadow: 0 25px 60px -35px rgba(127, 90, 240, 0.4);
 }
@@ -631,6 +710,12 @@ button {
 
 .product-card img {
   border-radius: 20px;
+  transition: transform var(--transition), filter var(--transition);
+}
+
+.product-card:hover img {
+  transform: scale(1.03);
+  filter: saturate(1.05);
 }
 
 .product-card header {
